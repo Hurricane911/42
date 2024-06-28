@@ -6,14 +6,10 @@
 /*   By: joyim <joyim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/11 11:43:12 by joyim             #+#    #+#             */
-/*   Updated: 2024/06/14 16:05:03 by joyim            ###   ########.fr       */
+/*   Updated: 2024/06/24 19:40:51 by joyim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <stdio.h>
-#include <stdlib.h>
-*/
 #include "libft.h"
 /*
 char	*ft_strchr(const char *s, int c)
@@ -51,27 +47,16 @@ size_t	ft_strlen(const char *s)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int		start;
-	int		end;
-	char	*str;
 	size_t	i;
 
-	start = 0;
-	end = ft_strlen(s1) - 1;
-	while (s1[start] && ft_strchr(set, s1[start]))
-		start++;
-	while (s1[end - 1] && ft_strchr(set, s1[end]) && end > start)
-		end--;
-	str = (char *)malloc(sizeof(char) * (end - start + 1));
-	if (str == NULL)
+	if (s1 == NULL || set == NULL)
 		return (NULL);
-	i = 0;
-	while (start <= end)
-	{
-		str[i++] = s1[start++];
-	}
-	str[i] = 0;
-	return (str);
+	while (*s1 && ft_strchr(set, *s1))
+		s1++;
+	i = ft_strlen(s1);
+	while (i && ft_strchr(set, *(s1 + i)))
+		i--;
+	return (ft_substr(s1, 0, i + 1));
 }
 /*
 int main()

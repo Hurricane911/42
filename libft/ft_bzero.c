@@ -6,13 +6,10 @@
 /*   By: joyim <joyim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 14:57:01 by joyim             #+#    #+#             */
-/*   Updated: 2024/06/19 14:34:45 by joyim            ###   ########.fr       */
+/*   Updated: 2024/06/24 19:38:29 by joyim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <stdio.h>
-*/
 #include "libft.h"
 
 void	ft_bzero(void *s, size_t n)

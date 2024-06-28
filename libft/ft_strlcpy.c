@@ -6,13 +6,10 @@
 /*   By: joyim <joyim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 16:19:27 by joyim             #+#    #+#             */
-/*   Updated: 2024/06/18 14:23:11 by joyim            ###   ########.fr       */
+/*   Updated: 2024/06/24 19:40:21 by joyim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <stdio.h>
-*/
 #include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)

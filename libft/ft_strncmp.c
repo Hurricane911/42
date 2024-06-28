@@ -6,13 +6,10 @@
 /*   By: joyim <joyim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 14:14:02 by joyim             #+#    #+#             */
-/*   Updated: 2024/06/18 15:22:58 by joyim            ###   ########.fr       */
+/*   Updated: 2024/06/24 19:40:36 by joyim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <stdio.h>
-*/
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)

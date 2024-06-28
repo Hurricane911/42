@@ -6,15 +6,10 @@
 /*   By: joyim <joyim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 14:30:17 by joyim             #+#    #+#             */
-/*   Updated: 2024/06/19 13:49:37 by joyim            ###   ########.fr       */
+/*   Updated: 2024/06/24 19:39:12 by joyim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-*/
 #include "libft.h"
 /*calculate len of n
  *if len of n is -, + 1 to add space

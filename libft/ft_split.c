@@ -6,16 +6,10 @@
 /*   By: joyim <joyim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/13 17:00:23 by joyim             #+#    #+#             */
-/*   Updated: 2024/06/19 11:21:12 by joyim            ###   ########.fr       */
+/*   Updated: 2024/06/24 21:44:59 by joyim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-*/
 #include "libft.h"
 
 static int	count_words(const char *str, char c)
@@ -46,6 +40,8 @@ static char	*word_dup(const char *str, int start, int finish)
 
 	i = 0;
 	word = malloc((finish - start + 1) * sizeof(char));
+	if (!str)
+		return (NULL);
 	while (start < finish)
 		word[i++] = str[start++];
 	word[i] = '\0';
@@ -60,16 +56,16 @@ char	**ft_split(char const *s, char c)
 	char	**split;
 
 	split = malloc((count_words(s, c) + 1) * sizeof(char *));
-	if (!s || !split)
-		return (0);
+	if (!split)
+		return (NULL);
 	i = 0;
 	j = 0;
 	index = -1;
-	while (i <= strlen(s))
+	while (i <= ft_strlen(s))
 	{
 		if (s[i] != c && index < 0)
 			index = i;
-		else if ((s[i] == c || i == strlen(s)) && index >= 0)
+		else if ((s[i] == c || i == ft_strlen(s)) && index >= 0)
 		{
 			split[j] = word_dup(s, index, i);
 			j++;

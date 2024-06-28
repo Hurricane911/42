@@ -6,14 +6,10 @@
 /*   By: joyim <joyim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 12:57:47 by joyim             #+#    #+#             */
-/*   Updated: 2024/06/14 12:35:28 by joyim            ###   ########.fr       */
+/*   Updated: 2024/06/24 21:26:28 by joyim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <stdio.h>
-#include <stdlib.h>
-*/
 #include "libft.h"
 
 /*
@@ -34,8 +30,6 @@ char	*ft_strdup(const char *s1)
 	char	*str;
 	size_t	i;
 
-	if (s1 == NULL)
-		return (NULL);
 	str = (char *)malloc(sizeof(char) * (ft_strlen(s1) + 1));
 	if (str == NULL)
 		return (NULL);

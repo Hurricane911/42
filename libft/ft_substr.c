@@ -6,14 +6,10 @@
 /*   By: joyim <joyim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 16:39:46 by joyim             #+#    #+#             */
-/*   Updated: 2024/06/18 16:12:34 by joyim            ###   ########.fr       */
+/*   Updated: 2024/06/24 21:30:42 by joyim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <stdio.h>
-#include <stdlib.h>
-*/
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
@@ -22,6 +18,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	sub_len;
 	char	*substr;
 
+	if (!s)
+		return (NULL);
 	s_len = ft_strlen(s);
 	sub_len = 0;
 	if (start < s_len)

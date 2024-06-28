@@ -6,15 +6,10 @@
 /*   By: joyim <joyim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 20:14:50 by joyim             #+#    #+#             */
-/*   Updated: 2024/06/14 12:35:28 by joyim            ###   ########.fr       */
+/*   Updated: 2024/06/24 19:40:08 by joyim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <stdio.h>
-#include <string.h>
-#include <ctype.h>
-*/
 #include "libft.h"
 /*
 void	to_upper_if_even(unsigned int index, char *c)

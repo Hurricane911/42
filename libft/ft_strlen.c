@@ -6,13 +6,10 @@
 /*   By: joyim <joyim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 12:00:33 by joyim             #+#    #+#             */
-/*   Updated: 2024/06/18 14:27:12 by joyim            ###   ########.fr       */
+/*   Updated: 2024/06/24 19:40:25 by joyim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <stdio.h>
-*/
 #include "libft.h"
 
 size_t	ft_strlen(const char *s)

@@ -6,13 +6,10 @@
 /*   By: joyim <joyim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 15:05:47 by joyim             #+#    #+#             */
-/*   Updated: 2024/06/14 12:35:28 by joyim            ###   ########.fr       */
+/*   Updated: 2024/06/24 19:40:17 by joyim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <stdio.h>
-*/
 #include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)

@@ -6,13 +6,10 @@
 /*   By: joyim <joyim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 14:26:18 by joyim             #+#    #+#             */
-/*   Updated: 2024/06/17 12:48:46 by joyim            ###   ########.fr       */
+/*   Updated: 2024/06/24 19:40:00 by joyim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <stdio.h>
-*/
 #include "libft.h"
 
 char	*ft_strchr(const char *s, int c)

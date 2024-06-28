@@ -6,13 +6,10 @@
 /*   By: joyim <joyim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 14:56:50 by joyim             #+#    #+#             */
-/*   Updated: 2024/06/14 14:10:27 by joyim            ###   ########.fr       */
+/*   Updated: 2024/06/24 19:39:16 by joyim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <stdio.h>
-*/
 #include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)

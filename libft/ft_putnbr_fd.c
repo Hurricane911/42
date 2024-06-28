@@ -6,14 +6,10 @@
 /*   By: joyim <joyim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/13 13:21:06 by joyim             #+#    #+#             */
-/*   Updated: 2024/06/18 20:46:50 by joyim            ###   ########.fr       */
+/*   Updated: 2024/06/26 22:27:05 by joyim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <stdio.h>
-#include <unistd.h>
-*/
 #include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
@@ -36,11 +32,11 @@ void	ft_putnbr_fd(int n, int fd)
 			(ft_putchar_fd((n + 48), fd));
 	}
 }
-/*
+
 int main()
 {
-	int n = 0;
+	int n = 10.2;
 	ft_putnbr_fd(n, 1);
 	return 0;
 }
-*/
+

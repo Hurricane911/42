@@ -3,18 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joyim <joyim@student.42kl.edu.my>          +#+  +:+       +#+        */
+/*   By: joyim <joyim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 13:27:22 by joyim             #+#    #+#             */
-/*   Updated: 2024/06/17 12:43:15 by joyim            ###   ########.fr       */
+/*   Updated: 2024/06/24 19:38:34 by joyim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <stdio.h>
-#include <stdio.h>
-#include <stdlib.h>
-*/
 #include "libft.h"
 
 int	ft_atoi(const char *str)

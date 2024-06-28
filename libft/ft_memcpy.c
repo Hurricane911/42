@@ -6,13 +6,10 @@
 /*   By: joyim <joyim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 15:29:53 by joyim             #+#    #+#             */
-/*   Updated: 2024/06/14 12:34:10 by joyim            ###   ########.fr       */
+/*   Updated: 2024/06/24 21:24:18 by joyim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <stdio.h>
-*/
 #include "libft.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
@@ -22,6 +19,10 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 
 	d = (unsigned char *)dst;
 	s = (unsigned char *)src;
+	if (n == 0)
+		return (dst);
+	if (dst == NULL && src == NULL)
+		return (NULL);
 	while (n > 0)
 	{
 		*d++ = *s++;

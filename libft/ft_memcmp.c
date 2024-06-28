@@ -6,13 +6,10 @@
 /*   By: joyim <joyim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/07 15:59:37 by joyim             #+#    #+#             */
-/*   Updated: 2024/06/14 12:34:04 by joyim            ###   ########.fr       */
+/*   Updated: 2024/06/24 21:24:02 by joyim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <stdio.h>
-*/
 #include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
