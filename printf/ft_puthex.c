@@ -1,5 +1,4 @@
 #include "ft_printf.h"
-#include <stdio.h>
 
 int ft_puthex(unsigned int n, char specifier)
 {
@@ -18,7 +17,7 @@ int ft_puthex(unsigned int n, char specifier)
     }
     else
     {
-        putchar(base[n]);
+        ft_putchar(base[n]);
         len ++;
     }
     return (len);

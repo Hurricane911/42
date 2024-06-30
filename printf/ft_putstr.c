@@ -1,17 +1,22 @@
 #include "ft_printf.h"
 
-void	ft_putstr(char *s)
+int	ft_putstr(char *s)
 {
 	size_t	i;
 
+	int len;
+	
+	len = 0;
 	if (!s)
-		return ;
+		return (0);
 	i = 0;
 	while (s[i] != '\0')
 	{
-		ft_putchar(&s[i]);
+		ft_putchar(s[i]);
 		i++;
+		len++;
 	}
+	return (len);
 }
 /*
 int main()

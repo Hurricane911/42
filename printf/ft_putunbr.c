@@ -13,7 +13,7 @@ int	ft_putunbr(unsigned int n)
 	}
 	else
 	{
-		putchar(base[n]);
+		ft_putchar(base[n]);
 		len++;
 	}
 	return (len);

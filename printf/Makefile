@@ -1,18 +1,18 @@
 NAME = ft_printf.a
 
 SRC = $(wildcard *.c)
-OBJS = $(SRC: .c=.o)
+OBJS = $(SRC:.c=.o)
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
+%.o : %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar -cr $(NAME) $(OBJS)
-
-%.c : %.o
-	$(cc) $(CFLAGS) $(INC) -c $< -o $@ -I./
+	ar -rcs $(NAME) $(OBJS)
 
 clean:
 	rm -f $(OBJS)

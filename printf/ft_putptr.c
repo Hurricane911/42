@@ -1,12 +1,12 @@
-#include "ft_print.h"
+#include "ft_printf.h"
 
-void ft_putptr(unsigned long nb)
+int ft_putptr(unsigned long nb)
 {
-	int len
+	int len;
 	char *base;
 
 	len = 0;
-	base = "0123456789abcdef"
+	base = "0123456789abcdef";
 
 	if (nb >= 16)
 	{
@@ -15,7 +15,7 @@ void ft_putptr(unsigned long nb)
 	}
 	else
 	{
-		len += ft_putchar(base[n]);
+		len += ft_putchar(base[nb]);
 	}
 	return (len);
 }
