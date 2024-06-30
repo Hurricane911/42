@@ -3,12 +3,11 @@
 int	ft_putstr(char *s)
 {
 	size_t	i;
-
 	int len;
 	
 	len = 0;
 	if (!s)
-		return (0);
+		return (write(1, "(null)", 6));
 	i = 0;
 	while (s[i] != '\0')
 	{

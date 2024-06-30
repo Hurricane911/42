@@ -14,14 +14,14 @@ static int ft_format(va_list args, const char format)
         print_len = ft_putstr("0x");
         print_len += ft_putptr(va_arg(args, unsigned long));
     }
-    //else if (format == 'd' || format == 'i')
-       // print_len += ft_putnbr(va_arg(args, int));
+    else if (format == 'd' || format == 'i')
+       print_len += ft_putnbr(va_arg(args, int));
     else if (format == 'u')
         print_len += ft_putunbr(va_arg(args, unsigned int));
     else if (format == 'x' || format == 'X')
         print_len += ft_puthex(va_arg(args, unsigned int), 16);
-   // else if (format == '%')
-     //   print_len += ft_putpercent();
+   else if (format == '%')
+        return ft_putchar('%');
     return (print_len);
 }
 

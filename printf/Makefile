@@ -1,4 +1,4 @@
-NAME = ft_printf.a
+NAME = libftprintf.a
 
 SRC = $(wildcard *.c)
 OBJS = $(SRC:.c=.o)

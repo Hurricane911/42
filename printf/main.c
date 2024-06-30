@@ -1,8 +1,9 @@
 #include "ft_printf.h"
+#include <stdio.h>
 
 int main()
 {
-    ft_printf("what %s %\n", "world", "hello");
+    int result = ft_printf("what %x", "1234");
+    printf("%d", result);
     return 0;
-
 }
