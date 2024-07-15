@@ -1,30 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_puthexlow.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joyim <joyim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/01 13:43:05 by joyim             #+#    #+#             */
-/*   Updated: 2024/07/01 14:00:35 by joyim            ###   ########.fr       */
+/*   Created: 2024/07/01 13:42:00 by joyim             #+#    #+#             */
+/*   Updated: 2024/07/01 13:47:34 by joyim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putstr(char *s)
+int	ft_puthexlow(unsigned int n)
 {
-	size_t	i;
 	int		len;
+	char	*base;
 
 	len = 0;
-	if (!s)
-		return (write(1, "(null)", 6));
-	i = 0;
-	while (s[i] != '\0')
+	base = "0123456789abcdef";
+	if (n >= 16)
 	{
-		ft_putchar(s[i]);
-		i++;
+		len += ft_puthexlow(n / 16);
+		len += ft_puthexlow(n % 16);
+	}
+	else
+	{
+		ft_putchar(base[n]);
 		len++;
 	}
 	return (len);
@@ -32,8 +34,8 @@ int	ft_putstr(char *s)
 /*
 int main()
 {
-	char *s = "what";
-	ft_putstr(s) ;
-	return 0;
+    int hex = 1234;
+    int result = ft_puthexlow(hex, 'X');
+    printf("\n%d\n", result);
 }
 */

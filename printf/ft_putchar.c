@@ -1,15 +1,26 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: joyim <joyim@student.42kl.edu.my>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/07/01 13:42:33 by joyim             #+#    #+#             */
+/*   Updated: 2024/07/01 13:42:36 by joyim            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
-int ft_putchar(char c)
+int	ft_putchar(char c)
 {
-    int len;
+	int		len;
 
-    len = 0;
-    write(1, &c, 1);
-    len++;
-    return (len);
+	len = 0;
+	write(1, &c, 1);
+	len++;
+	return (len);
 }
-
 // int main()
 // {
 //     char c = 'w';

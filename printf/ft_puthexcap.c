@@ -1,39 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_puthexcap.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joyim <joyim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/01 13:43:05 by joyim             #+#    #+#             */
-/*   Updated: 2024/07/01 14:00:35 by joyim            ###   ########.fr       */
+/*   Created: 2024/07/01 13:41:43 by joyim             #+#    #+#             */
+/*   Updated: 2024/07/01 13:48:57 by joyim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putstr(char *s)
+int	ft_puthexcap(unsigned int n)
 {
-	size_t	i;
 	int		len;
+	char	*base;
 
 	len = 0;
-	if (!s)
-		return (write(1, "(null)", 6));
-	i = 0;
-	while (s[i] != '\0')
+	base = "0123456789ABCDEF";
+	if (n >= 16)
 	{
-		ft_putchar(s[i]);
-		i++;
-		len++;
+		len += ft_puthexcap(n / 16);
+		len += ft_puthexcap(n % 16);
+	}
+	else
+	{
+		ft_putchar(base[n]);
+		len ++;
 	}
 	return (len);
 }
-/*
-int main()
-{
-	char *s = "what";
-	ft_putstr(s) ;
-	return 0;
-}
-*/
